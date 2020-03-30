@@ -42,5 +42,14 @@ Now you can simply
 
 	Add-Computer -DomainName "sebug.local" -restart
 
+## Giving rights
+I have created an account that is supposed to be admin of the ws-machines. I
+created a group "Service Administrators" and put him in it.
+
+Then opening group policy management.
+
+Adding a local admin GPO.
+
+https://social.technet.microsoft.com/wiki/contents/articles/7833.how-to-make-a-domain-user-the-local-administrator-for-all-pcs.aspx
 
 

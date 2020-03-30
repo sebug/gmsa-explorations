@@ -55,4 +55,11 @@ https://social.technet.microsoft.com/wiki/contents/articles/7833.how-to-make-a-d
 ## Installing the IIS Role
 Using the newly created service administrator account, add the IIS role.
 
+Once you have set up the configuration on the first machine, you can reuse the same configuration on the second - in an admin PowerShell:
+
+	Install-WindowsFeature -ConfigurationFilePath .\WSDeploymentConfigTemplate.xml
+
+## Group Managed Service accounts
+
+	Add-KDSRootKey -effectiveimmediately
 

@@ -63,3 +63,13 @@ Once you have set up the configuration on the first machine, you can reuse the s
 
 	Add-KDSRootKey -effectiveimmediately
 
+Created a gmsa1Group that will contain the systems that will be allowed to retrieve the password.
+
+	New-ADServiceAccount -Name gmsa1 -DNSHostName service1.sebug.local -PrincipalsAllowedToRetrieveManagedPassword gmsa1Group
+
+Also set the
+
+	Set-ADServiceAccount gmsa1 -PrincipalsAllowedToRetrieveManagedPassword ws1$, ws2$
+
+Restart the machines.
+

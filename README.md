@@ -73,3 +73,14 @@ Also set the
 
 Restart the machines.
 
+Then, using the Active Directory module, on each machine:
+
+	Install-ADServiceAccount gmsa1
+
+You can then start using them for, say, app pools, by specifying
+
+SEBUG\gmsa1$
+
+as the user account.
+
+

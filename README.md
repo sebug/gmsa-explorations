@@ -27,5 +27,20 @@ Here is the script to promote the domain controller:
 ## Setting up the web servers
 Add two Windows Servers and join them to the domain. For that you may have to set the DNS address to the internal IP address of the DC.
 
+Control Panel\Network and Internet\Network and Sharing Center
+
+vEthernet (nat)
+
+Properties
+
+TCP/IPv4 -> Preferred DNS server
+
+
+Then you should be able to ping sebug.local
+
+Now you can simply
+
+	Add-Computer -DomainName "sebug.local" -restart
+
 
 

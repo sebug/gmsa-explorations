@@ -24,5 +24,8 @@ Here is the script to promote the domain controller:
 	-SysvolPath "C:\windows\SYSVOL" `
 	-Force:$true
 
+## Setting up the web servers
+Add two Windows Servers and join them to the domain. For that you may have to set the DNS address to the internal IP address of the DC.
+
 
 

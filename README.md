@@ -52,4 +52,7 @@ Adding a local admin GPO.
 
 https://social.technet.microsoft.com/wiki/contents/articles/7833.how-to-make-a-domain-user-the-local-administrator-for-all-pcs.aspx
 
+## Installing the IIS Role
+Using the newly created service administrator account, add the IIS role.
+
 

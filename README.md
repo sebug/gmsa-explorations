@@ -83,4 +83,13 @@ SEBUG\gmsa1$
 
 as the user account.
 
+## Certificates
+I'm following this tutorial for active directory certificate services: https://www.linkedin.com/learning/windows-server-2016-active-directory-certificate-services/installing-a-root-ca
+
+I created a new machine, not domain-joined and installed the Active Directory Certificate Services. Configured it to be a root ca. I create a new private key. I'm using SHA256 as a hash and not SHA1 as in the tutorial. This should be strong enough. 4K key size.
+
+I gave it the name sebug-CA because why not.
+
+For the subordinate CA i created a new machine, joined to sebug.local
+
 
